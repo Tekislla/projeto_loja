@@ -1,0 +1,24 @@
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+h2 {
+    text-align: center;
+}
+
+#div_row {
+    margin-left: 10px;
+}
+
+#div_container {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    height: 450px;
+}
+
+header {
+    background-color: #f2f2f2;
+}
