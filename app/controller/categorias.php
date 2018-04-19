@@ -32,4 +32,21 @@ require_once "../model/CategoriaCrud.php";
             include "../views/categorias/show.php";
             include "../views/templates/rodape.php";
             break;
+
+        case 'inserir':
+            if(!isset($_POST['gravar'])) {
+                //FORMULÁRIO
+                include "../views/templates/cabecalho.php";
+                include "../views/categorias/inserir.php";
+                include "../views/templates/rodape.php";
+            } else {
+                //GRAVAR OS DADOS NO BD
+                $cat = new Categoria();
+                $cat->setNome($_POST['nome']);
+                $cat->setDescricao($_POST['descricao']);
+                $insert = new CategoriaCrud();
+                $insert->insertCategoria($cat);
+                header("location: categorias.php");
+            }
+            break;
     }

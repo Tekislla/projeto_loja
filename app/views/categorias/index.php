@@ -1,7 +1,8 @@
     <h2>Listagem de categorias</h2>
     <br>
     <br>
-    <div id="div" class="container">
+    <div class="container">
+        <h5><a href="?acao=inserir"> Inserir Nova Categoria</a></h5>
         <table class="table">
             <thead class="thread">
             <tr>

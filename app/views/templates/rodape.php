@@ -1,9 +1,13 @@
+
 <div id="div_row" class="row">
     <footer>
-        <p>Endereço</p>
-        <p>Telefone</p>
+        <ul>
+        <li>Endereço</li>
+        <li>Telefone</li>
+        </ul>
     </footer>
 </div>
+
 
 </body>
 </html>

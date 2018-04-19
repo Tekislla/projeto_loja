@@ -13,10 +13,16 @@ h2 {
     margin-left: 10px;
 }
 
-#div_container {
+#div_show {
     background-color: #f2f2f2;
     border-radius: 5px;
     height: 450px;
+}
+
+#div_inserir {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    height: 510px;
 }
 
 header {

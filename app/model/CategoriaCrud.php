@@ -61,7 +61,7 @@ class CategoriaCrud
 
         $desc = $categoria->getDescricao();
 
-        $sql = "INSERT INTO categoria (nome_categoria, descricao_categoria) VALUES ($nome, $desc)";
+        $sql = "INSERT INTO categoria (nome_categoria, descricao_categoria) VALUES ('$nome', '$desc')";
 
         $this->conexao->exec($sql);
 
