@@ -66,4 +66,18 @@ class CategoriaCrud
         $this->conexao->exec($sql);
 
     }
+
+    public function updateCategoria(Categoria $categoria){
+        $nome = utf8_decode($categoria->getNome());
+        $desc = utf8_decode($categoria->getDescricao());
+        $id = $categoria->getID();
+        $sql = "UPDATE categoria SET nome_categoria = '$nome', descricao_categoria = '$desc' WHERE id_categoria = $id";
+        $this->conexao->exec($sql);
+    }
+
+    public function deleteCategoria($id){
+        $sql = "DELETE FROM categoria WHERE id_categoria = $id";
+        $this->conexao->exec($sql);
+    }
+
 }

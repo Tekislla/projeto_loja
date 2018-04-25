@@ -8,6 +8,7 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Categoria</th>
+                <th scope="col">Ações</th>
             </tr>
             </thead>
             <tbody>
@@ -15,6 +16,18 @@
             <tr>
                 <th scope="row"><?= $categoria->getId(); ?></th>
                 <td><a href="?acao=show&id=<?= $categoria->getId(); ?>"><?= $categoria->getNome(); ?></a></td>
+                <th scope="row">
+                    <a href="">
+                        <button type="submit" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                    </a>
+                    <a href="?acao=alterar&id=<?= $categoria->getId(); ?>">
+                        <button type="submit" class="btn btn-warning">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </button>
+                    </a>
+                </th>
             </tr>
             <?php endforeach; ?>
             </tbody>
