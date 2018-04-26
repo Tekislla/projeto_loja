@@ -2,11 +2,20 @@
 
     <form method="post" action="categorias.php?acao=alterar&id=<?= $categoria->getId(); ?>">
         <br>
-        <h2>Editar uma Categoria</h2>
+        <h1>Alterar uma Categoria</h1>
 
         <br><br>
 
-        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <label for="nome">Nome</label>
+        <br>
+        <input type="text" name="nome" value="<?= $categoria->getNome(); ?>">
+        <br>
+        <label for="descricao">Descrição</label>
+        <br>
+        <textarea name="descricao" id="desc" cols="30" rows="10">
+            <?= $categoria->getDescricao(); ?>
+        </textarea>
+        <br>
         <input type="submit" name="gravar" value="Editar">
 
 

@@ -18,13 +18,13 @@
                 <td><a href="?acao=show&id=<?= $categoria->getId(); ?>"><?= $categoria->getNome(); ?></a></td>
                 <th scope="row">
                     <a href="">
-                        <button type="submit" class="btn btn-danger">
-                            <span class="glyphicon glyphicon-trash"></span>
+                        <button type="submit" class="btn btn-outline-danger">
+                            <span class="glyphicon glyphicon-trash">excluir</span>
                         </button>
                     </a>
                     <a href="?acao=alterar&id=<?= $categoria->getId(); ?>">
-                        <button type="submit" class="btn btn-warning">
-                            <span class="glyphicon glyphicon-edit"></span>
+                        <button type="submit" class="btn btn-outline-warning">
+                            <span class="glyphicon glyphicon-refresh">editar</span>
                         </button>
                     </a>
                 </th>

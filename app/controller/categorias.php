@@ -77,5 +77,5 @@ require_once "../model/CategoriaCrud.php";
             $crud = new CategoriaCrud();
             $crud->deleteCategoria($id);
             header('location: categorias.php');
-            break
+            break;
     }
